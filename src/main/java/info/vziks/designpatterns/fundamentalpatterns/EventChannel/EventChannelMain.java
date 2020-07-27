@@ -1,7 +1,7 @@
 package info.vziks.designpatterns.fundamentalpatterns.EventChannel;
 
 /**
- * Class EventChannel
+ * Class EventChannelMain
  * Project designpatterns
  *
  * @author Anton Prokhorov <vziks@live.ru>
