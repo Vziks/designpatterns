@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ContainerCommands {
 
-    private List<Command> commandList = new ArrayList<Command>();
+    private List<Command> commandList = new ArrayList<>();
 
     /**
      * Add command.

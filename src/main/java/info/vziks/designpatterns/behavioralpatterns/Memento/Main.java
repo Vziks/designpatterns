@@ -16,7 +16,7 @@ public class Main {
 
         System.out.println("state " + state);
 
-        System.out.println(state.getState().equals(States.CREATED));
+        System.out.println("equals order created" + state.getState().equals(States.CREATED));
 
         Memento memento = order.saveToMemento();
 
@@ -24,14 +24,14 @@ public class Main {
 
         order.waiting();
 
-        System.out.println(order.getState().getState().equals(States.WAITING_PAYMENT));
+        System.out.println("equals order waiting" + order.getState().getState().equals(States.WAITING_PAYMENT));
 
         order.payed();
 
-        System.out.println(order.getState().getState().equals(States.PAYED));
+        System.out.println("equals order payed" +  order.getState().getState().equals(States.PAYED));
 
         order.restoreFromMemento(memento);
 
-        System.out.println(order.getState().getState().equals(States.CREATED));
+        System.out.println("equals after restore " + order.getState().getState().equals(States.CREATED));
     }
 }

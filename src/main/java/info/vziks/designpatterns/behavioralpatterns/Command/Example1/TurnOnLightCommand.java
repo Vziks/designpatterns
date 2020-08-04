@@ -1,7 +1,7 @@
 package info.vziks.designpatterns.behavioralpatterns.Command.Example1;
 
 public class TurnOnLightCommand implements Command{
-    private Receiver theLight;
+    private final Receiver theLight;
 
     public TurnOnLightCommand(Receiver light){
         this.theLight=light;
