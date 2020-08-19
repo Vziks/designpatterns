@@ -1,10 +1,9 @@
 package info.vziks.designpatterns.behavioralpatterns.Memento;
 
 
-
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * Class State
@@ -19,9 +18,7 @@ public class State implements Cloneable {
 
     public State(States state) {
 
-        for (States stat : States.values()) {
-            validStates.add(stat);
-        }
+        validStates.addAll(Arrays.asList(States.values()));
 
         this.ensureIsValidState(state);
         this.state = state;
